@@ -7,6 +7,7 @@ const MovieList = ({moviesData}) => {
         return(
             <Movie title={movie.title} key={movie.title}>
                 <p><b>Director:</b> {movie.director}</p>
+                <p><b>Genre:</b> {movie.genre}</p>
                 <p><b>Watch Time(mins):</b> {movie.watchTime}</p>
             </Movie>
         );
@@ -14,7 +15,7 @@ const MovieList = ({moviesData}) => {
 
     return(
         <>
-            <h2><u>MovieList</u></h2>
+            <h2><u>Movie List</u></h2>
             <ul>{moviesToBeDisplayed}</ul>
         </>
     );
