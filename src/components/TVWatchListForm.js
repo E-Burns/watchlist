@@ -59,40 +59,45 @@ const TVWatchListForm = ({addTV}) => {
 
     return(
         <form onSubmit={handleFormSubmit}>
-            <input
-                onChange={handleTitleInput}
-                type='text'
-                placeholder="Title"
-                value={titleInput}
+            <div>
+                <input
+                    onChange={handleTitleInput}
+                    type='text'
+                    placeholder="Title"
+                    value={titleInput}
+                    />
+                <input
+                    onChange={handleDirectorInput}
+                    type='text'
+                    placeholder="Director"
+                    value={directorInput}
+                    />
+                <input
+                    onChange={handleSeasonsInput}
+                    type='text'
+                    placeholder="No. Seasons"
+                    value={seasonsInput}
+                    />
+            </div>
+
+            <div>
+                <input
+                    onChange={handleEpisodesInput}
+                    type='text'
+                    placeholder="No. Eps"
+                    value={episodesInput}
+                    />
+                <input
+                    onChange={handleEpisodeLengthInput}
+                    type='text'
+                    placeholder="Avg Ep Length (mins)"
+                    value={episodeLengthInput}
+                    />
+                <input 
+                    type="submit"
+                    value="Submit"
                 />
-            <input
-                onChange={handleDirectorInput}
-                type='text'
-                placeholder="Director"
-                value={directorInput}
-                />
-            <input
-                onChange={handleSeasonsInput}
-                type='text'
-                placeholder="No. Seasons"
-                value={seasonsInput}
-                />
-            <input
-                onChange={handleEpisodesInput}
-                type='text'
-                placeholder="No. Eps"
-                value={episodesInput}
-                />
-            <input
-                onChange={handleEpisodeLengthInput}
-                type='text'
-                placeholder="Avg Ep Length (mins)"
-                value={episodeLengthInput}
-                />
-            <input 
-                type="submit"
-                value="Submit"
-            />
+            </div>
         </form>
     )
 }

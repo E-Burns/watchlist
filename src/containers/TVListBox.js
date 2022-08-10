@@ -10,9 +10,9 @@ const TVListBox = () => {
             director: 'David Jenkins and Taika Waititi',
             numberOfSeasons: 1,
             numberOfEps: 10,
-            avEpisodeLength: 26
+            avEpisodeLength: 30
         }
-    ])
+    ]);
 
     const addTV = (ContentData) => {
         const copyOfTV = [...tv, ContentData];
@@ -20,11 +20,11 @@ const TVListBox = () => {
     }
 
     return(
-        <>
+        <section>
             <TVWatchListForm addTV={addTV}/>
             <TVList tvData={tv}/>
-        </>
-    )
+        </section>
+    );
 }
 
 export default TVListBox;

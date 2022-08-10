@@ -19,10 +19,10 @@ const MovieListBox = () => {
     }
 
     return(
-        <>
+        <section>
             <MovieWatchListForm addMovie={addMovie}/>
             <MovieList moviesData={movies}/>
-        </>
+        </section>
     )
 }
 

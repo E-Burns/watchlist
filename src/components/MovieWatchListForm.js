@@ -50,34 +50,39 @@ const MovieWatchListForm = ({addMovie}) => {
 
     return(
         <form onSubmit={handleFormSubmit}>
-            <input 
-                onChange={handleTitleInput}
-                type="text"
-                placeholder="Title"
-                value={titleInput}
-            />
-            <input 
-                onChange={handleDirectorInput}
-                type="text"
-                placeholder="Director"
-                value={directorInput}
-            />
-            <input 
-                onChange={handleGenreInput}
-                type="text"
-                placeholder="Genre"
-                value={genreInput}
-            />
-            <input 
-                onChange={handleWatchTimeInput}
-                type="text"
-                placeholder="Watch time (mins)"
-                value={watchTimeInput}
-            />
-            <input 
-                type="submit"
-                value="Submit"
-            />
+            <div>
+                <input 
+                    onChange={handleTitleInput}
+                    type="text"
+                    placeholder="Title"
+                    value={titleInput}
+                />
+                <input 
+                    onChange={handleDirectorInput}
+                    type="text"
+                    placeholder="Director"
+                    value={directorInput}
+                />
+                <input 
+                    onChange={handleGenreInput}
+                    type="text"
+                    placeholder="Genre"
+                    value={genreInput}
+                />
+            </div>
+
+            <div>
+                <input 
+                    onChange={handleWatchTimeInput}
+                    type="text"
+                    placeholder="Watch time (mins)"
+                    value={watchTimeInput}
+                />
+                <input 
+                    type="submit"
+                    value="Submit"
+                />
+            </div>
         </form>
     )
 }

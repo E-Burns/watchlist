@@ -7,8 +7,10 @@ const WatchListBox = () => {
     return(
         <>
             <h1>Watch List</h1>
-            <MovieListBox/>
-            <TVListBox/>
+            <div className="listBox">
+                <MovieListBox className='MovieListBox'/>
+                <TVListBox className='TVListBox'/>
+            </div>
         </>
     )
 }

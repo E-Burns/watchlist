@@ -5,7 +5,7 @@ import WatchListBox from "./containers/WatchListBox";
 function App() {
   return (
     <>
-      <WatchListBox/>
+      <WatchListBox className='WatchListBox'/>
     </>
   );
 }
