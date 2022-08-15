@@ -5,7 +5,7 @@ const TVList = ({tvData}) => {
 
     const tvToBeDisplayed = tvData.map((tv) => {
         return(
-            <TV title={tv.title} key={tv.title}>
+            <TV title={tv.title} key={tv.title}> {/*change key to something unique*/}
                 <p><b>Director:</b> {tv.director}</p>
                 <p><b>No. Seasons:</b> {tv.numberOfSeasons}, <b>No. Episodes:</b> {tv.numberOfEps}</p>
                 <p><b>Average Episode Length(mins):</b> {tv.avEpisodeLength}</p>

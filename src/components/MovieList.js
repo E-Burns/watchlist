@@ -5,7 +5,7 @@ const MovieList = ({moviesData}) => {
 
     const moviesToBeDisplayed = moviesData.map((movie) => {
         return(
-            <Movie title={movie.title} key={movie.title}>
+            <Movie title={movie.title} key={movie.title}> {/*change key to something unique*/}
                 <p><b>Director:</b> {movie.director}</p>
                 <p><b>Genre:</b> {movie.genre}</p>
                 <p><b>Watch Time(mins):</b> {movie.watchTime}</p>

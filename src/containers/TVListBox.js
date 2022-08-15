@@ -11,7 +11,7 @@ const TVListBox = () => {
             numberOfSeasons: 1,
             numberOfEps: 10,
             avEpisodeLength: 30
-        }
+        } //add a key for each (ID)
     ]);
 
     const addTV = (ContentData) => {

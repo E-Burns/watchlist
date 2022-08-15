@@ -1,5 +1,11 @@
 body {
   background-color: #bdbfc6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  width: 60%;
+  margin: 0 auto;
 }
 
 h1, h2 {
@@ -8,12 +14,6 @@ h1, h2 {
 
 ul {
   list-style: none;
-}
-
-.App {
-  width: 60%;
-  margin: 0 auto;
-  font-family: 'Lato', sans-serif;
 }
 
 .listBox {
@@ -32,9 +32,9 @@ ul {
 
 li {
   color: white;
-  padding: 5px;
-  padding-left: 20px;
-  border-radius: 10px;
+  padding: 2px 0px 2px 20px;
+  border-radius: 20px;
+  margin: 0px 25px 5px 0px;
 }
 
 li.movie-list {
@@ -42,4 +42,13 @@ li.movie-list {
 }
 li.tv-list {
   background-color: rgb(27, 61, 162);
+}
+
+form > div > input {
+  margin: 1px;
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
 }

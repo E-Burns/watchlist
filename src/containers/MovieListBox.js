@@ -10,7 +10,7 @@ const MovieListBox = () => {
             director: 'Sam Raimi',
             genre: 'Action',
             watchTime: 121
-        }
+        } //add a key for each (ID)
     ])
 
     const addMovie = (ContentData) => {
