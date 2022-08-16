@@ -52,7 +52,8 @@ const TVWatchListForm = ({addTV}) => {
             director: directorToSubmit,
             numberOfSeasons: seasonsToSubmit,
             numberOfEps: episodesToSubmit,
-            avEpisodeLength: episodeLengthToSubmit
+            avEpisodeLength: episodeLengthToSubmit,
+            isWatched: false
         }
         addTV(tvToSubmit);
     }

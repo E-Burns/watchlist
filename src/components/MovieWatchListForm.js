@@ -43,7 +43,8 @@ const MovieWatchListForm = ({addMovie}) => {
             title: titleToSubmit,
             director: directorToSubmit,
             genre: genreToSubmit,
-            watchTime: watchTimeToSubmit
+            watchTime: watchTimeToSubmit,
+            isWatched: false
         }
         addMovie(movieToSubmit);
     }

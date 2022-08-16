@@ -1,21 +1,27 @@
 import React, { useState } from "react";
 import Movie from "./Movie";
 
-const MovieList = ({moviesData}) => {
+const MovieList = ({moviesData, watchedMovie}) => {
 
-    const moviesToBeDisplayed = moviesData.map((movie) => {
+    const changeWatched = (index) => {
+        watchedMovie(index);
+    }
+
+    const moviesToBeDisplayed = moviesData.map((movie, index) => {
+
         return(
-            <Movie title={movie.title} key={movie.title}> {/*change key to something unique*/}
+            <Movie title={movie.title} key={index}>
                 <p><b>Director:</b> {movie.director}</p>
                 <p><b>Genre:</b> {movie.genre}</p>
                 <p><b>Watch Time(mins):</b> {movie.watchTime}</p>
+
+                {movie.isWatched ? <span className="watched">Watched</span> : <button onClick={() => changeWatched(index)}>Not Watched</button>}
             </Movie>
         );
     });
 
     return(
         <>
-            <h2><u>Movie List</u></h2>
             <ul>{moviesToBeDisplayed}</ul>
         </>
     );
