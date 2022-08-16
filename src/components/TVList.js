@@ -9,12 +9,13 @@ const TVList = ({tvData, watchedTV}) => {
 
     const tvToBeDisplayed = tvData.map((tv, index) => {
         return(
-            <TV title={tv.title} key={index}>
+            <TV 
+            title={tv.title} 
+            watched={tv.isWatched ? <span className="watched">Watched</span> : <button onClick={() => changeWatched(index)}>Not Watched</button>}
+            key={index}>
                 <p><b>Director:</b> {tv.director}</p>
                 <p><b>No. Seasons:</b> {tv.numberOfSeasons}, <b>No. Episodes:</b> {tv.numberOfEps}</p>
                 <p><b>Average Episode Length(mins):</b> {tv.avEpisodeLength}</p>
-
-                {tv.isWatched ? <span className="watched">Watched</span> : <button onClick={() => changeWatched(index)}>Not Watched</button>}
             </TV>
         );
     });

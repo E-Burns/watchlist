@@ -10,12 +10,13 @@ const MovieList = ({moviesData, watchedMovie}) => {
     const moviesToBeDisplayed = moviesData.map((movie, index) => {
 
         return(
-            <Movie title={movie.title} key={index}>
+            <Movie 
+            title={movie.title} 
+            watched={movie.isWatched ? <span>Watched</span> : <button onClick={() => changeWatched(index)}>Not Watched</button>}
+            key={index}>
                 <p><b>Director:</b> {movie.director}</p>
                 <p><b>Genre:</b> {movie.genre}</p>
                 <p><b>Watch Time(mins):</b> {movie.watchTime}</p>
-
-                {movie.isWatched ? <span className="watched">Watched</span> : <button onClick={() => changeWatched(index)}>Not Watched</button>}
             </Movie>
         );
     });

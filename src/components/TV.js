@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-const TV = ({title, children}) => {
+const TV = ({title, watched, children}) => {
     return(
         <li className="tv-list">
-            <h3>{title}</h3>
+            <h3>{title}{watched}</h3>
             {children}
         </li>
     )
